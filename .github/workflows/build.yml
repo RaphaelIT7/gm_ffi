@@ -20,6 +20,8 @@ jobs:
         apt install -y build-essential git libstdc++6:i386 gcc-multilib g++-multilib wget
     
     - uses: actions/checkout@v3
+      with:
+        submodules: recursive
     - uses: actions/checkout@v3
       with:
         submodules: recursive
