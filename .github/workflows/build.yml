@@ -96,10 +96,10 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: gm${{env.FINAL_REALM}}_${{env.PROJECT_NAME}}_windows.dll
-        path: projects/windows/vs2019/x86/ReleaseWithSymbols/gm${{env.REALM}}_${{env.PROJECT_NAME}}_win32.dll
+        path: projects/windows/vs2019/x86/ReleaseWithSymbols/
 
     - uses: actions/upload-artifact@v2
       if: env.BUILD_64x == 'true'
       with:
         name: gm${{env.FINAL_REALM}}_${{env.PROJECT_NAME}}_win64.dll
-        path: projects/windows/vs2019/x86_64/ReleaseWithSymbols/gm${{env.REALM}}_${{env.PROJECT_NAME}}_win64.dll
+        path: projects/windows/vs2019/x86_64/ReleaseWithSymbols/
